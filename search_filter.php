@@ -127,10 +127,10 @@
                    <td><?php echo $row['payment_paid'];?></td>
                    <td><?php echo $row['payment_due'];?></td>
             <td>
-              <a class="btn btn-success" href="payment_update.php?id=<?php echo $row['id'];?>">UPDATE</a>
+              <a class="btn btn-success" href="#">UPDATE</a>
             </td>
             <td>
-              <form method="POST" action="payment_list.php?id=<?php echo $row['id'];?>">
+              <form method="POST" action="#">
                     <button class="btn btn-danger" name="deletBtn" onclick="return confirm('DO You Want To Delete?')">DELETE</button>
               </form>
             </td>
@@ -166,10 +166,10 @@
                    <td><?php echo $row['payment_paid'];?></td>
                    <td><?php echo $row['payment_due'];?></td>
             <td>
-              <a class="btn btn-success" href="payment_update.php?id=<?php echo $row['id'];?>">UPDATE</a>
+              <a class="btn btn-success" href="#">UPDATE</a>
             </td>
             <td>
-              <form method="POST" action="payment_list.php?id=<?php echo $row['id'];?>">
+              <form method="POST" action="#">
                     <button class="btn btn-danger" name="deletBtn" onclick="return confirm('DO You Want To Delete?')">DELETE</button>
               </form>
             </td>
