@@ -1,6 +1,13 @@
-<?php include 'connection.php'; ?>
+
 <?php
-    
+
+    $DBhost="host";
+    $DBuser="your_dbuser";
+    $DBpass="your_dbpass";
+    $DBname="your_db_name";
+    $conn=mysqli_connect($DBhost,$DBuser,$DBpass,$DBname);
+    mysqli_set_charset($conn, "utf8");
+
     if(isset($_POST['deletBtn'])){
       $id = $_GET['id'];
       $deletSQL="DELETE FROM `all_payment` WHERE `id`='$id'";
@@ -189,12 +196,7 @@
 
   </tbody>
 </table>
-
 <!-- Button trigger modal -->
-
-
-
-
     </div>
     <!-- /#page-content-wrapper -->
 
